@@ -1,9 +1,6 @@
 import React from "react";
-import logo1 from "../../../assets/TimeLineLogo/Logo1.svg";
-import logo2 from "../../../assets/TimeLineLogo/Logo2.svg";
-import logo3 from "../../../assets/TimeLineLogo/Logo3.svg";
-import logo4 from "../../../assets/TimeLineLogo/Logo4.svg";
-import timelineImage from "../../../assets/Images/TimelineImage.png";
+
+import { logo1, logo2, logo3, logo4, timelineImage } from "../../../assets";
 
 const timeline = [
   {
@@ -49,16 +46,14 @@ const TimelineSection = () => {
           ))}
         </div>
         {/* image */}
-        <div className="relative shadow-blue-200">
-          {/* gradient */}
-          <div></div>
+        <div className="relative shadow-blue-200 shadow-[10px_-5px_50px_-5px] transition-all duration-200 hover:shadow-none ">
           <img
             src={timelineImage}
             alt="timeline"
-            className="shadow-white object-cover h-fit"
+            className="object-cover h-fit shadow-white shadow-[20px_20px_0px_0px] transition-all duration-200 hover:shadow-none hover:scale-95"
           />
 
-          <div className="absolute bg-caribbeangreen-700 flex flex-row text-white uppercase py-7 left-[50%] translate-x-[-50%] translate-y-[-50%] ">
+          <div className="absolute bg-caribbeangreen-700 flex flex-row text-white uppercase py-7 left-[50%] translate-x-[-50%] translate-y-[-50%]  ">
             <div className="flex flex-row gap-5 items-center border-r border-caribbeangreen-300 px-7">
               <h2 className="text-3xl font-bold">10</h2>
               <p className="text-caribbeangreen-300 text-sm">

@@ -1,9 +1,10 @@
 import React from "react";
-import HighlightText from "./HighlightText";
-import knowYourProgres from "../../../assets/Images/Know_your_progress.png";
-import compareWithOthers from "../../../assets/Images/Compare_with_others.png";
-import planYourLesson from "../../../assets/Images/Plan_your_lessons.png";
-import CtaButton from "./CtaButton";
+import { CtaButton, HighlightText } from "../../";
+import {
+  knowYourProgres,
+  compareWithOthers,
+  planYourLesson,
+} from "../../../assets";
 
 const LearningLanguageSection = () => {
   return (
@@ -17,21 +18,21 @@ const LearningLanguageSection = () => {
           realistic voice-over, progress tracking, custom schedule and more.
         </p>
 
-        <div className="flex flex-row items-center justify-center mt-5 ">
+        <div className="flex flex-row items-center justify-center mt-5  ">
           <img
             src={knowYourProgres}
             alt="know your progres"
-            className="object-contain -mr-32"
+            className="object-contain -mr-32 rotate-learning-image-1"
           />
           <img
             src={compareWithOthers}
             alt="compare with others"
-            className="object-contain"
+            className="object-contain rotate-learning-image-2"
           />
           <img
             src={planYourLesson}
             alt="plan your lesson"
-            className="object-contain -ml-36"
+            className="object-contain -ml-36 rotate-learning-image-3"
           />
         </div>
 

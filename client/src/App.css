@@ -71,3 +71,39 @@ body {
 .homepage_bg {
   background: url(./assets/Images/bghome.svg);
 }
+
+.timeline-gradient {
+  position: absolute;
+  width: 749.26px;
+  height: 479.64px;
+  left: calc(50% - 749.26px / 2 + 645.63px);
+  top: calc(50% - 479.64px / 2 - 4.21px);
+  background: linear-gradient(
+    117.82deg,
+    #9cecfb -9.12%,
+    #65c7f7 48.59%,
+    #0052d4 106.3%
+  );
+  filter: blur(34px);
+  transform: matrix(1, 0, -0.03, 1, 0, 0);
+  opacity: 0.6;
+}
+
+.rotate-learning-image-1,
+.rotate-learning-image-2,
+.rotate-learning-image-3 {
+  transition: all 300ms;
+  /* z-index: -1; */
+}
+
+.rotate-learning-image-1:hover {
+  transform: rotate(-15deg);
+}
+
+.rotate-learning-image-2:hover {
+  transform: rotate(9deg);
+}
+
+.rotate-learning-image-3:hover {
+  transform: rotate(-10deg);
+}

@@ -7,11 +7,11 @@ import {
   CodeBlocks,
   TimelineSection,
   LearningLanguageSection,
+  InstructorSection,
+  ExploreMore,
+  Footer,
 } from "../components";
-import banner from "../assets/Images/banner.mp4";
-import InstructorSection from "../components/core/Homepage/InstructorSection";
-import Footer from "../components/common/Footer";
-import ExploreMore from "../components/core/Homepage/ExploreMore";
+import { banner } from "../assets";
 
 const Home = () => {
   return (
@@ -50,7 +50,7 @@ const Home = () => {
           </CtaButton>
         </div>
 
-        <div className="shadow-blue-200 mx-3 my-14 shadow-[10px_-5px_50px_-5px] shadow-blue-20 ">
+        <div className="shadow-blue-200 mx-3 my-14 shadow-[10px_-5px_50px_-5px]  ">
           <video
             src={banner}
             muted
@@ -176,7 +176,9 @@ const Home = () => {
         {/* review  slider here */}
       </div>
       {/* Footer */}
-      <Footer />
+      <div className="bg-richblack-800">
+        <Footer />
+      </div>
     </div>
   );
 };

@@ -10,7 +10,11 @@ const InstructorSection = () => {
       <div className="flex flex-row gap-20 items-center">
         {/* left */}
         <div className="w-[50%] ">
-          <img src={instructor} alt="instructor" className="shadow-white" />
+          <img
+            src={instructor}
+            alt="instructor"
+            className="shadow-white shadow-[-20px_-20px_0_0] transition-all duration-200 hover:scale-95 hover:shadow-none"
+          />
         </div>
 
         <div className="w-[50%] flex flex-col gap-8 text-white ">
