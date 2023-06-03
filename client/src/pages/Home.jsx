@@ -11,6 +11,7 @@ import {
   ExploreMore,
   Footer,
 } from "../components";
+
 import { banner } from "../assets";
 
 const Home = () => {

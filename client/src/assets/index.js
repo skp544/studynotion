@@ -10,7 +10,10 @@ import timelineImage from "./Images/TimelineImage.png";
 import knowYourProgres from "./Images/Know_your_progress.png";
 import compareWithOthers from "./Images/Compare_with_others.png";
 import planYourLesson from "./Images/Plan_your_lessons.png";
-import footerLogo from "./Logo/Logo-Full-Light.png";
+import Logo from "./Logo/Logo-Full-Light.png";
+import signupImg from "./Images/signup.webp";
+import frameImg from "./Images/frame.png";
+import loginImg from "./Images/login.webp";
 
 export {
   banner,
@@ -22,5 +25,8 @@ export {
   knowYourProgres,
   compareWithOthers,
   planYourLesson,
-  footerLogo,
+  Logo,
+  signupImg,
+  frameImg,
+  loginImg,
 };
