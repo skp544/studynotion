@@ -22,7 +22,7 @@ const Home = () => {
       <div className="relative max-w-maxContent flex flex-col mx-auto w-11/12 items-center text-white justify-between">
         {/* button */}
         <Link to={"/signup"}>
-          <div className="group mt-16 p-1 mx-auto rounded-full bg-richblack-800 font-bold text-richblack-200 transition-all duration-200 hover:scale-95 w-fit btn-shadow-1">
+          <div className="group mt-16 p-1 mx-auto rounded-full bg-richblack-800 font-bold text-richblack-200 transition-all duration-200 hover:scale-95 w-fit btn-shadow-1 drop-shadow-[0_1.5px_rgba(255,255,255,0.25)] hover:drop-shadow-none">
             <div className="flex items-center gap-2 rounded-full px-10 py-[5px] transition-all duration-200 group-hover:bg-richblack-900">
               <p className="">Become an Instructor</p>
               <FaArrowRight />
@@ -126,10 +126,10 @@ const Home = () => {
       {/* Section 2 */}
 
       <div className="bg-pure-greys-5 text-richblack-700">
-        <div className="homepage_bg h-[310px] ">
-          <div className="w-11/12 max-w-maxContent flex flex-col items-center gap-5 mx-auto">
-            <div className="h-[150px]"></div>
-            <div className="flex flex-row gap-7 text-white">
+        <div className="homepage_bg h-[320px] ">
+          <div className="w-11/12 max-w-maxContent flex flex-col items-center gap-8 mx-auto">
+            <div className="lg:h-[150px]"></div>
+            <div className="flex flex-row gap-7 text-white lg:mt-8">
               <CtaButton active={true} linkTo={"/signup"}>
                 <div className="flex items-center gap-3">
                   Explore Full Catalog
@@ -145,12 +145,12 @@ const Home = () => {
         </div>
 
         <div className="w-11/12 mx-auto max-w-maxContent flex flex-col items-center justify-between gap-7">
-          <div className="flex flex-row gap-5 mb-10 mt-[95px] ">
+          <div className="flex lg:flex-row flex-col gap-7 mb-10 mt-[-100px] lg:mt-20 lg:gap-0 ">
             <div className="text-4xl font-semibold w-[45%]">
               Get the skills you need for a{" "}
               <HighlightText text={"job that is in demand."} />
             </div>
-            <div className="flex flex-col gap-10 w-[40%] items-start ">
+            <div className="flex flex-col gap-10 lg:w-[40%] items-start ">
               <p className="text-[16px]">
                 The modern StudyNotion is the dictates its own terms. Today, to
                 be a competitive specialist requires more than professional
@@ -169,7 +169,7 @@ const Home = () => {
 
       {/* Section 3 */}
 
-      <div className="w-11/12 max-w-maxContent flex flex-col items-center mx-auto justify-between gap-8 bg-richblack-900 mt-[50px]">
+      <div className="relative w-11/12  max-w-maxContent flex flex-col items-center mx-auto justify-between gap-8 bg-richblack-900 mt-[50px]">
         <InstructorSection />
         <h2 className="text-center text-white text-4xl font-semibold mt-10">
           Reviews from other learners
