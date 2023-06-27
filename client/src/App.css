@@ -107,3 +107,28 @@ body {
 .rotate-learning-image-3:hover {
   transform: rotate(-10deg);
 }
+
+.spinner {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 9px solid #f1f2ff;
+  animation: spinner-bulqg1 0.8s infinite linear alternate,
+    spinner-oaa3wk 1.6s infinite linear;
+}
+
+.form-style {
+  @apply rounded-[0.5rem] bg-richblack-800 p-[12px] text-richblack-5;
+  box-shadow: "inset 0px -1px 0px  rgba(255,255,255,0.18)";
+}
+
+.scale {
+  @apply hover:scale-95 hover:shadow-none transition-all duration-200;
+}
+
+.blackButton {
+  @apply cursor-pointer rounded-md bg-richblack-800 px-[20px] py-[8px] font-semibold text-richblack-5;
+}
+.label-style {
+  @apply text-[14px] text-richblack-5;
+}

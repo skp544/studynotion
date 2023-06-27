@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import {
+  About,
   ForgotPassword,
   Home,
   Login,
@@ -56,6 +57,7 @@ function App() {
             </OpenRoute>
           }
         />
+        <Route path="/about" element={<About />} />
       </Routes>
     </div>
   );

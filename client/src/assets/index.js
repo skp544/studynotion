@@ -14,6 +14,10 @@ import Logo from "./Logo/Logo-Full-Light.png";
 import signupImg from "./Images/signup.webp";
 import frameImg from "./Images/frame.png";
 import loginImg from "./Images/login.webp";
+import bannerImg1 from "./Images/aboutus1.webp";
+import bannerImg2 from "./Images/aboutus2.webp";
+import bannerImg3 from "./Images/aboutus3.webp";
+import foundingStory from "./Images/FoundingStory.png";
 
 export {
   banner,
@@ -29,4 +33,8 @@ export {
   signupImg,
   frameImg,
   loginImg,
+  bannerImg1,
+  bannerImg2,
+  bannerImg3,
+  foundingStory,
 };

@@ -14,6 +14,11 @@ import SignupForm from "./core/auth/SignupForm";
 import OpenRoute from "./core/auth/OpenRoute";
 import Template from "./core/auth/Template";
 import Tab from "./common/Tab";
+import Quote from "./core/About/Quote";
+import Stats from "./core/About/Stats";
+import LearningGrid from "./core/About/LearningGrid";
+import ContactFormSection from "./core/About/ContactFormSection";
+import ContactUsForm from "./ContactPage/ContactUsForm";
 
 export {
   CodeBlocks,
@@ -32,4 +37,9 @@ export {
   OpenRoute,
   Template,
   Tab,
+  Quote,
+  Stats,
+  LearningGrid,
+  ContactFormSection,
+  ContactUsForm,
 };
