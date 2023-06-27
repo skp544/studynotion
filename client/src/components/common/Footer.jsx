@@ -35,6 +35,7 @@ const Footer = () => {
             <div className="w-[30%] flex flex-col gap-3 lg:w-[30%] mb-7 lg:pl-0">
               <Link to={"/"}>
                 <img src={Logo} alt="footer" className="object-contain" />
+                /8
               </Link>
               <h2 className="text-richblack-50 font-semibold text-[16px]">
                 Company
