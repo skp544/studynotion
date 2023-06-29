@@ -2,6 +2,9 @@ import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import {
   About,
+  Contact,
+  Dashboard,
+  Error,
   ForgotPassword,
   Home,
   Login,
@@ -9,9 +12,20 @@ import {
   UpdatePassword,
   VerifyEmail,
 } from "./pages";
-import { Navbar, OpenRoute } from "./components";
+import {
+  Cart,
+  EnrolledCourses,
+  MyProfile,
+  Navbar,
+  OpenRoute,
+  PrivateRoute,
+  Setting,
+} from "./components";
+import { ACCOUNT_TYPE } from "./utils/constants";
+import { useSelector } from "react-redux";
 
 function App() {
+  const { user } = useSelector((state) => state.profile);
   return (
     <div className="w-screen min-h-screen bg-richblack-900 flex flex-col font-inter">
       <Navbar />
@@ -58,6 +72,30 @@ function App() {
           }
         />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+
+        <Route
+          element={
+            <PrivateRoute>
+              <Dashboard />
+            </PrivateRoute>
+          }
+        >
+          <Route path="/dashboard/my-profile" element={<MyProfile />} />
+          <Route path="/dashboard/settings" element={<Setting />} />
+
+          {user?.accountType === ACCOUNT_TYPE.STUDENT && (
+            <>
+              <Route
+                path="/dashboard/enrolled-courses"
+                element={<EnrolledCourses />}
+              />
+              <Route path="/dashboard/cart" element={<Cart />} />
+            </>
+          )}
+        </Route>
+
+        <Route path="*" element={<Error />} />
       </Routes>
     </div>
   );

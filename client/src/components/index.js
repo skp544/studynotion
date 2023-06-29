@@ -19,6 +19,23 @@ import Stats from "./core/About/Stats";
 import LearningGrid from "./core/About/LearningGrid";
 import ContactFormSection from "./core/About/ContactFormSection";
 import ContactUsForm from "./ContactPage/ContactUsForm";
+import Sidebar from "./core/Dashboard/Sidebar";
+import SidebarLink from "./core/Dashboard/SidebarLink";
+import ConfirmationModal from "./common/ConfirmationModal";
+import IconBtn from "./common/IconBtn";
+import MyProfile from "./core/Dashboard/MyProfile";
+import PrivateRoute from "./core/auth/PrivateRoute";
+import EnrolledCourses from "./core/Dashboard/EnrolledCourses";
+import Cart from "./core/Dashboard/Cart/Cart";
+import RenderCartCourses from "./core/Dashboard/Cart/RenderCartCourses";
+import RenderTotalAmount from "./core/Dashboard/Cart/RenderTotalAmount";
+import Setting from "./core/Dashboard/Setting/Setting";
+import ChangeProfilePicture from "./core/Dashboard/Setting/ChangeProfilePicture";
+import DeleteAccount from "./core/Dashboard/Setting/DeleteAccount";
+import EditProfile from "./core/Dashboard/Setting/EditProfile";
+import UpdatePassword from "./core/Dashboard/Setting/UpdatePassword";
+import ContactDetails from "./ContactPage/ContactDetails";
+import ContactForm from "./ContactPage/ContactForm";
 
 export {
   CodeBlocks,
@@ -42,4 +59,21 @@ export {
   LearningGrid,
   ContactFormSection,
   ContactUsForm,
+  Sidebar,
+  SidebarLink,
+  ConfirmationModal,
+  IconBtn,
+  MyProfile,
+  PrivateRoute,
+  Setting,
+  EnrolledCourses,
+  Cart,
+  RenderCartCourses,
+  RenderTotalAmount,
+  ChangeProfilePicture,
+  DeleteAccount,
+  EditProfile,
+  UpdatePassword,
+  ContactDetails,
+  ContactForm,
 };

@@ -6,3 +6,5 @@ export { default as ForgotPassword } from "./ForgotPassword";
 export { default as UpdatePassword } from "./UpdatePassword";
 export { default as VerifyEmail } from "./VerifyEmail";
 export { default as About } from "./About";
+export { default as Dashboard } from "./Dashboard";
+export { default as Contact } from "./Contact";
