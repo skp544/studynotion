@@ -13,6 +13,7 @@ import {
   VerifyEmail,
 } from "./pages";
 import {
+  AddCourse,
   Cart,
   EnrolledCourses,
   MyProfile,
@@ -91,6 +92,12 @@ function App() {
                 element={<EnrolledCourses />}
               />
               <Route path="/dashboard/cart" element={<Cart />} />
+            </>
+          )}
+
+          {user?.accountType === ACCOUNT_TYPE.INSTRUCTOR && (
+            <>
+              <Route path="/dashboard/add-course" element={<AddCourse />} />
             </>
           )}
         </Route>

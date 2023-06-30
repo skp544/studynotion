@@ -36,6 +36,11 @@ import EditProfile from "./core/Dashboard/Setting/EditProfile";
 import UpdatePassword from "./core/Dashboard/Setting/UpdatePassword";
 import ContactDetails from "./ContactPage/ContactDetails";
 import ContactForm from "./ContactPage/ContactForm";
+import AddCourse from "./core/Dashboard/AddCourse/AddCourse";
+import RenderSteps from "./core/Dashboard/AddCourse/RenderSteps";
+import CourseInformationForm from "./core/Dashboard/AddCourse/CourseInformation/CourseInformationForm";
+import RequirementField from "./core/Dashboard/AddCourse/CourseInformation/RequirementField";
+import CourseBuilderForm from "./core/Dashboard/AddCourse/CourseInformation/CourseBuilderForm";
 
 export {
   CodeBlocks,
@@ -76,4 +81,9 @@ export {
   UpdatePassword,
   ContactDetails,
   ContactForm,
+  AddCourse,
+  RenderSteps,
+  CourseInformationForm,
+  RequirementField,
+  CourseBuilderForm,
 };
