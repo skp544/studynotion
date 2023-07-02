@@ -40,7 +40,13 @@ import AddCourse from "./core/Dashboard/AddCourse/AddCourse";
 import RenderSteps from "./core/Dashboard/AddCourse/RenderSteps";
 import CourseInformationForm from "./core/Dashboard/AddCourse/CourseInformation/CourseInformationForm";
 import RequirementField from "./core/Dashboard/AddCourse/CourseInformation/RequirementField";
-import CourseBuilderForm from "./core/Dashboard/AddCourse/CourseInformation/CourseBuilderForm";
+import CourseBuilderForm from "./core/Dashboard/AddCourse/CourseBuilder/CourseBuilderForm";
+import NestedView from "./core/Dashboard/AddCourse/CourseBuilder/NestedView";
+import SubSectionModal from "./core/Dashboard/AddCourse/CourseBuilder/SubSectionModal";
+import Upload from "./core/Dashboard/AddCourse/Upload";
+import ChipInput from "./core/Dashboard/AddCourse/CourseInformation/ChipInput";
+
+// export { default as CodeBlocks } from "./core/Homepage/CodeBlocks";
 
 export {
   CodeBlocks,
@@ -86,4 +92,8 @@ export {
   CourseInformationForm,
   RequirementField,
   CourseBuilderForm,
+  NestedView,
+  SubSectionModal,
+  Upload,
+  ChipInput,
 };

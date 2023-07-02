@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { RiStarSFill, RiStarSLine, RiDeleteBin6Line } from "react-icons/ri";
 import ReactStars from "react-rating-stars-component";
+import { removeFromCart } from "../../../../redux/slices/cartSlice";
 
 const RenderCartCourses = () => {
   const { cart } = useSelector((state) => state.cart);

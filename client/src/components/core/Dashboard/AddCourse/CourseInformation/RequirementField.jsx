@@ -36,12 +36,12 @@ const RequirementField = ({
   };
 
   return (
-    <div>
+    <div className="flex flex-col space-y-2">
       <label className="label-style" htmlFor={name}>
-        {label}
+        {label} <sup className="text-pink-200">*</sup>
       </label>
 
-      <div>
+      <div className="flex flex-col items-start space-y-2">
         <input
           type="text"
           id={name}
@@ -59,14 +59,14 @@ const RequirementField = ({
       </div>
 
       {requirementList.length > 0 && (
-        <ul>
+        <ul className="mt-2 list-inside list-disc">
           {requirementList.map((item, index) => (
             <li key={index} className="flex items-center text-richblack-5">
               <span>{item}</span>
               <button
                 type="button"
                 onClick={() => handleRemoveRequirement(index)}
-                className="text-xs text-pure-greys-300"
+                className="text-xs ml-2 text-pure-greys-300"
               >
                 Clear
               </button>
@@ -74,7 +74,9 @@ const RequirementField = ({
           ))}
         </ul>
       )}
-      {errors[name] && <span>{label} is required</span>}
+      {errors[name] && (
+        <span className="errors-style">{label} is required</span>
+      )}
     </div>
   );
 };
